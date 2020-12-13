@@ -1,0 +1,19 @@
+.form-padder {
+
+    padding: 0 0 0 20px;
+}
+
+input[type="text"]{
+
+    width: 20%;
+    min-width: 200px;
+    
+
+}
+
+
+
+body{
+
+    background-color: #3bb399;
+}
