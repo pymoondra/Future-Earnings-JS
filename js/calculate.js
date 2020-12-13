@@ -76,8 +76,12 @@ function createTable(present, future, percentage){
     
 
     let div = document.querySelector("div.table")
+    div.innerHTML = ''
+
+
     
     let table = document.createElement('table');
+    
     table.id = 'test';
     div.appendChild(table);
     
