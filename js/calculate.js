@@ -107,30 +107,36 @@ function createDropDown() {
 
     
      dropDown.addEventListener("click", function (event) {
+
+
+
+        dropDownMenu.innerHTML = ''
         
         let values = range(0.05, 1.05, .05);
-
-
+        
         for (let i = 0; i < values.length; i += 1) {
             
             let value = values[i]
+
             
             const myOption = document.createElement('button');
             // id
             myOption.type = 'button';
             // クラス名
-            myOption.className = 'dropdown-item';
+            myOption.className = "dropdown-item";
             // テキスト内容
 
             myOption.dataset.value = values[i]
             myOption.innerHTML = values[i];
 
             myOption.addEventListener("click", (event) => {
+                dropDown.innerHTML = event.target.dataset.value;
                 let percentage = parseFloat(event.target.dataset.value);
                 createTable(present, future, percentage)
             })
             
             dropDownMenu.appendChild(myOption);
+            
         
         }
 
