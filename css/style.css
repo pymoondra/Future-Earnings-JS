@@ -1,9 +1,8 @@
 h1,h2,h3,h4,h5,h6{
 	font-family:'Lato', sans-serif;
 	color:white;
-	margin:.5em 0 0.5em 0;
+	margin:0.0em 0 0.0em 0;
 	font-weight:900;
-	line-height:1em;
 	text-transform:uppercase;
 }
 
@@ -34,13 +33,19 @@ h6{
 
 .padder {
 
-    padding: 0 0 0 10px;
+    padding: 15px 15px 15px 15px;
 }
+.dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);}
 
 
-.center {
+.no-padding {
 
-    padding: 0 0 0 10px;
+    padding: 0px 0px 0px 0px;
 }
 
 .margin-padder {
@@ -67,6 +72,6 @@ body{
 
 .wrap {
     min-width: 3rem;
-    background-color: #3bb399;
+    background-color: rgb(23, 162, 184);
 
 }
