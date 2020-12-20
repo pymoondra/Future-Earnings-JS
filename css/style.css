@@ -1,19 +1,113 @@
 .form-padder {
-
-    padding: 0 0 0 20px;
+  padding: 0 0 0 20px;
+  width: 20%;
 }
 
-input[type="text"]{
-
-    width: 20%;
-    min-width: 200px;
-    
-
+input[type="text"] {
+  width: 20%;
+  min-width: 200px;
 }
 
+body {
+  background-color: #e7e7de;
 
+  background-image: url("https://www.transparenttextures.com/patterns/project-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: #0f3057;
+  font-family: "Poppins";
+}
 
-body{
+h1,
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Poppins";
+}
 
-    background-color: #3bb399;
+.title-bar {
+  text-align: left;
+  background-color: #00587a;
+  color: #e7e7de;
+  left: 0;
+  line-height: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* padding: 1rem; */
+  padding: 3% 2% 1%;
+}
+
+.top-spacing {
+  margin-top: 100px; /*ナビゲーションとの重なり回避*/
+}
+
+.submit-button {
+  margin-top: 5px;
+  /* font-family: Hack, monospace; */
+  background: #ffffff;
+  color: #0f3057;
+  border-color: #00587a;
+  border-width: 1px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 5%;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative;
+}
+.submit-button::after {
+  content: ">";
+  position: absolute;
+  left: 85%;
+  top: 24%;
+  right: 10%;
+  bottom: 0;
+  opacity: 0;
+}
+
+.submit-button:hover {
+  font-weight: 600;
+  transition: padding 0.5s;
+  border-width: 2px;
+  border-radius: 10px;
+  /* box-shadow: 0px 6px 15px #0000ff61; */
+  padding: 5% 3.5rem 5% 5%;
+}
+.submit-button:hover::after {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.dropdown {
+  margin-left: 20px;
+}
+.table {
+  margin: 10px 0 0 20px;
+  background: #ffffff;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.dropdown-toggle {
+  background: #ffffff;
+  color: #0f3057;
+  border-color: #00587a;
+  border-width: 1px;
+}
+
+.dropdown-toggle:hover {
+  background: #00587a;
+  color: #ffffff;
+  border-color: #00587a;
+  border-width: 1px;
 }
